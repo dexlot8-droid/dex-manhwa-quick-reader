@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dex Manhwa Quick Reader</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Dex Manhwa</h1>
+      <p class="subtitle">Quick Reader</p>
+    </header>
+
+    <div id="continue-reading" class="section hidden">
+      <h2>Continue Reading</h2>
+      <div id="continue-list" class="series-list"></div>
+    </div>
+
+    <div class="section">
+      <h2>Search Series</h2>
+      <input type="text" id="search-input" placeholder="Search manhwa titles..." autocomplete="off">
+      <div id="search-status" class="status hidden"></div>
+      <div id="search-results" class="series-list"></div>
+    </div>
+
+    <div id="series-detail" class="section hidden">
+      <button id="back-btn" class="back-btn">&larr; Back</button>
+      <div id="series-info"></div>
+      <div id="chapter-list"></div>
+    </div>
+
+    <footer>
+      <a href="https://dexmanhwa.dpdns.org/" target="_blank" rel="noopener">Visit Dex Manhwa</a>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
